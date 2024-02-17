@@ -9,7 +9,8 @@ function M.toggle()
   end
 end
 
-function M.setup()
+function M.setup(opts)
+  opts = opts or {}
   local keymapoption = {
     desc = 'hls.toggle',
     noremap = true,
